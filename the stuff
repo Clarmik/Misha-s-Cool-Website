@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cool Mood Buttons</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: 'Segoe UI', sans-serif;
+      transition: background-color 0.5s, color 0.5s;
+      padding-top: 50px;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+    .button-container {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+    .mood-button {
+      padding: 15px 25px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .mood-button:hover {
+      transform: scale(1.1);
+    }
+    #message {
+      margin-top: 40px;
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Pick a Mood</h1>
+  <div class="button-container">
+    <button class="mood-button" onclick="setMood('happy')">😊 Happy</button>
+    <button class="mood-button" onclick="setMood('calm')">🌊 Calm</button>
+    <button class="mood-button" onclick="setMood('party')">🎉 Party</button>
+    <button class="mood-button" onclick="setMood('mystery')">🕵️‍♂️ Mystery</button>
+    <button class="mood-button" onclick="setMood('reset')">🔄 Reset</button>
+  </div>
+  <div id="message"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
