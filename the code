@@ -1,0 +1,36 @@
+function setMood(mood) {
+  const body = document.body;
+  const message = document.getElementById('message');
+
+  switch(mood) {
+    case 'happy':
+      body.style.backgroundColor = '#fffd82';
+      body.style.color = '#333';
+      message.textContent = 'Yay! Sunshine and smiles everywhere! 🌞';
+      break;
+
+    case 'calm':
+      body.style.backgroundColor = '#a0e7e5';
+      body.style.color = '#003f5c';
+      message.textContent = 'Shhh... Time to chill. 🌊';
+      break;
+
+    case 'party':
+      body.style.backgroundColor = '#ff6f61';
+      body.style.color = '#fff';
+      message.textContent = 'Turn up the music! It’s party time! 🕺';
+      break;
+
+    case 'mystery':
+      body.style.backgroundColor = '#2f2f2f';
+      body.style.color = '#f5f5f5';
+      message.textContent = 'Something strange is happening... 🕵️‍♂️';
+      break;
+
+    case 'reset':
+      body.style.backgroundColor = '';
+      body.style.color = '';
+      message.textContent = '';
+      break;
+  }
+}
